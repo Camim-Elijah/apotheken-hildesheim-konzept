@@ -228,7 +228,7 @@ p {
 }
 .header-inner {
   width: min(1280px, 92%);
-  min-height: 86px;
+  min-height: 78px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -238,12 +238,12 @@ p {
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   flex-shrink: 0;
 }
 .pharmacy-symbol {
-  width: 42px;
-  height: 46px;
+  width: 32px;
+  height: 38px;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
@@ -253,7 +253,7 @@ p {
   background: var(--line);
 }
 .brand-logo {
-  width: 180px;
+  width: 200px;
   height: auto;
   mix-blend-mode: multiply;
 }
@@ -301,66 +301,43 @@ nav a:hover {
   line-height: 21px;
 }
 
-/* Introduction */
+/* A compact introduction with a landscape photograph. */
 .hero {
-  width: min(1280px, 92%);
+  width: min(1160px, 88%);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 26px auto 0;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #eef0e6;
+  align-items: center;
+  gap: 48px;
+  margin: 40px auto 0;
 }
 .hero-image {
-  position: relative;
   grid-column: 2;
   grid-row: 1;
-  min-height: 460px;
+  width: 100%;
+  aspect-ratio: 1.4;
+  overflow: hidden;
+  border-radius: 16px;
 }
 .hero-image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 64% 35%;
-}
-.image-label {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  max-width: calc(100% - 40px);
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: #faf9f5ed;
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--green);
+  object-position: 65% 30%;
 }
 .hero-copy {
   grid-column: 1;
   grid-row: 1;
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
 }
 .hero h1 {
-  margin: 19px 0 22px;
+  font-size: clamp(34px, 3.4vw, 46px);
+  margin: 14px 0 18px;
+  letter-spacing: -1.6px;
 }
 .hero-text {
   font-size: 18px;
-  line-height: 1.75;
-  max-width: 450px;
-  margin-bottom: 25px;
-}
-.hero-secondary {
-  display: inline-flex;
-  min-height: 44px;
-  align-items: center;
-  margin-top: 10px;
-  font-size: 15px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  line-height: 1.65;
+  max-width: 420px;
+  margin-bottom: 24px;
 }
 
 /* Ownership, people and three distinct locations. */
@@ -986,14 +963,11 @@ dialog p {
   nav {
     gap: 20px;
   }
-  .hero-copy {
-    padding: 32px;
+  .hero {
+    gap: 30px;
   }
   .hero h1 {
-    font-size: 40px;
-  }
-  .hero-image {
-    min-height: 440px;
+    font-size: 34px;
   }
   .family-intro {
     gap: 35px;
@@ -1053,14 +1027,14 @@ dialog p {
     gap: 11px;
   }
   .pharmacy-symbol {
-    width: 32px;
-    height: 36px;
+    width: 25px;
+    height: 30px;
   }
   .brand-divider {
     height: 30px;
   }
   .brand-logo {
-    width: 145px;
+    width: 165px;
   }
   .cart-trigger {
     grid-column: 2;
@@ -1086,51 +1060,38 @@ dialog p {
   .hero {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
+    align-items: stretch;
+    width: 90%;
+    margin: 20px auto 0;
+    gap: 22px;
   }
   .hero-image {
-    min-height: 0;
-    height: auto;
-    aspect-ratio: 1.65;
-    max-height: 320px;
-    width: 100%;
+    aspect-ratio: 1.9;
+    border-radius: 12px;
   }
   .hero-image > img {
-    object-position: 63% 32%;
-  }
-  .image-label {
-    left: 6%;
-    bottom: 12px;
-    padding: 6px 9px;
-    font-size: 11px;
-    max-width: 88%;
+    object-position: 65% 32%;
   }
   .hero-copy {
-    padding: 27px 6% 29px;
+    padding: 0 2px;
   }
   .eyebrow {
     font-size: 11px;
     letter-spacing: 0.8px;
   }
   .hero h1 {
-    font-size: clamp(32px, 8.2vw, 43px);
-    margin: 13px 0 17px;
-    letter-spacing: -1.1px;
+    font-size: clamp(28px, 6.9vw, 36px);
+    margin: 10px 0 12px;
+    letter-spacing: -1px;
+    line-height: 1.2;
   }
   .hero-text {
     font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 21px;
+    line-height: 1.55;
+    margin-bottom: 19px;
   }
   .hero .button {
-    width: 100%;
     font-size: 16px;
-  }
-  .hero-secondary {
-    font-size: 15px;
-    margin-top: 6px;
   }
   .family-intro {
     display: flex;
@@ -1379,7 +1340,7 @@ dialog p {
     font-size: 14px;
   }
   .hero-image {
-    aspect-ratio: 1.5;
+    aspect-ratio: 1.9;
   }
   .product-card {
     padding: 9px;
