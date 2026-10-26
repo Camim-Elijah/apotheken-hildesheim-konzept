@@ -28,7 +28,7 @@ Anschließend http://127.0.0.1:4173 öffnen. Das Projekt benötigt zur Laufzeit 
 
 ## Funktionen
 
-Der Katalog zeigt neun Produkte aus vier Marken. NomoSan steht an erster Stelle und ist mit sechs Produkten vertreten. Die vier Demo-Marken sind NomoSan, ratiopharm, Orthomol und Doppelherz. Die Produkte können nach Kategorie und Marke gefiltert werden.
+Der Demoshop zeigt zwölf Produkte aus vier Marken in der Reihenfolge Orthomol, ratiopharm, NomoSan und Doppelherz. Von NomoSan sind ausschließlich Nomoadult AMD und Nomoadult Glaukom plus enthalten. In der ersten Übersicht mit acht gemischten Produkten erscheint nur AMD an dritter Stelle; über den Markenfilter oder die erweiterte Auswahl sind beide Produkte zugänglich. Die Produkte können nach Kategorie und Marke gefiltert werden.
 
 Der Bestellabschluss ist vollständig simuliert. Es gibt keinen Bestellserver, keine Zahlungsabwicklung, keine Reservierung und keine Benachrichtigung der Apotheken. Preise sind ausdrücklich frei gewählte Demonstrationspreise.
 

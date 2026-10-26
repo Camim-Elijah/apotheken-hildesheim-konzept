@@ -1,7 +1,7 @@
 import { PRODUCTS } from "./data/products.js";
 import { escapeHtml, formatCurrency, productImage } from "./utils.js";
 
-const INITIAL_PRODUCT_COUNT = 12;
+const INITIAL_PRODUCT_COUNT = 8;
 
 export function initializeShop({ onAdd, onDetails }) {
   const container = document.querySelector("#shop");
@@ -13,12 +13,9 @@ export function initializeShop({ onAdd, onDetails }) {
   const filterButtons = [...container.querySelectorAll("[data-filter]")];
   const state = { category: "Alle", brand: "Alle", expanded: false };
 
-  const brands = [...new Set(PRODUCTS.map((product) => product.brand))].sort(
-    (first, second) => {
-      if (first === "NomoSan") return -1;
-      if (second === "NomoSan") return 1;
-      return first.localeCompare(second, "de");
-    },
+  const brandOrder = ["Orthomol", "ratiopharm", "NomoSan", "Doppelherz"];
+  const brands = brandOrder.filter((brand) =>
+    PRODUCTS.some((product) => product.brand === brand),
   );
 
   brandSelect.innerHTML =

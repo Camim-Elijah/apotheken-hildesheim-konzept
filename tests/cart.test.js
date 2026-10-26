@@ -6,7 +6,7 @@ import { PRODUCTS } from "../scripts/data/products.js";
 test("restores only valid known products and bounded integer quantities", () => {
   const cart = createCart({
     initialValue: {
-      "nomosan-b": 2,
+      "nomosan-amd": 2,
       orthomol: -1,
       doppelherz: 1.5,
       pure: 100,
@@ -14,7 +14,7 @@ test("restores only valid known products and bounded integer quantities", () => 
     },
   });
   assert.equal(cart.getCount(), 2);
-  assert.equal(cart.getItems()[0].product.id, "nomosan-b");
+  assert.equal(cart.getItems()[0].product.id, "nomosan-amd");
   for (const value of [null, [], "invalid"]) {
     assert.equal(createCart({ initialValue: value }).getCount(), 0);
   }
@@ -27,14 +27,14 @@ test("calculates totals in integer cents and persists quantity changes", () => {
       persisted = value;
     },
   });
-  cart.add("nomosan-b");
+  cart.add("nomosan-amd");
   cart.add("doppelherz");
-  cart.changeQuantity("nomosan-b", 2);
-  assert.equal(cart.getTotal(), 47.15);
-  assert.deepEqual(persisted, { "nomosan-b": 3, doppelherz: 1 });
+  cart.changeQuantity("nomosan-amd", 2);
+  assert.equal(cart.getTotal(), 147.35);
+  assert.deepEqual(persisted, { "nomosan-amd": 3, doppelherz: 1 });
   cart.remove("doppelherz");
-  assert.equal(cart.getTotal(), 40.2);
-  cart.changeQuantity("nomosan-b", -3);
+  assert.equal(cart.getTotal(), 140.4);
+  cart.changeQuantity("nomosan-amd", -3);
   assert.equal(cart.getCount(), 0);
 });
 
@@ -51,23 +51,32 @@ test("notifies subscribers and supports removing subscriptions", () => {
   const cart = createCart();
   let updates = 0;
   const unsubscribe = cart.subscribe(() => updates++);
-  cart.add("nomosan-b");
+  cart.add("nomosan-amd");
   unsubscribe();
   cart.clear();
   assert.equal(updates, 1);
 });
 
-test("catalog starts with NomoSan and has unique image-backed products", () => {
-  assert.equal(PRODUCTS[0].brand, "NomoSan");
+test("catalog keeps the requested brand order and two NomoSan products", () => {
+  assert.deepEqual(
+    PRODUCTS.slice(0, 3).map((product) => product.brand),
+    ["Orthomol", "ratiopharm", "NomoSan"],
+  );
   assert.equal(
     new Set(PRODUCTS.map((product) => product.id)).size,
     PRODUCTS.length,
   );
   assert.equal(
     PRODUCTS.filter((product) => product.brand === "NomoSan").length,
-    6,
+    2,
   );
-  assert.ok(new Set(PRODUCTS.map((product) => product.brand)).size === 4);
+  assert.equal(PRODUCTS.length, 12);
+  assert.equal(new Set(PRODUCTS.map((product) => product.brand)).size, 4);
+  assert.equal(
+    PRODUCTS.slice(0, 8).filter((product) => product.brand === "NomoSan")
+      .length,
+    1,
+  );
   assert.ok(
     PRODUCTS.every(
       (product) => product.image && product.source.startsWith("https://"),

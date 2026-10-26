@@ -109,9 +109,6 @@ button {
   touch-action: manipulation;
 }
 a,
-summary {
-  touch-action: manipulation;
-}
 img {
   display: block;
   max-width: 100%;
@@ -549,64 +546,73 @@ nav a:hover {
 .services {
   background: var(--sage);
 }
-.services-layout {
+.advice-heading {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 90px;
-}
-.services-layout > div:first-child > p {
-  max-width: 380px;
-  font-size: 18px;
-}
-.service-photo {
-  width: 300px;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin: 30px 0 18px;
-}
-.service-list {
-  padding-top: 6px;
-}
-details {
-  border-top: 1px solid #bbc7b3;
-}
-details:last-child {
-  border-bottom: 1px solid #bbc7b3;
-}
-summary {
-  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   align-items: center;
-  gap: 20px;
-  padding: 25px 0;
-  cursor: pointer;
-  list-style: none;
-  font:
-    21px/1.5 Manrope,
-    sans-serif;
-  letter-spacing: -0.5px;
+  margin-bottom: 28px;
 }
-summary::-webkit-details-marker {
-  display: none;
+.advice-heading h2 {
+  margin-bottom: 0;
 }
-summary > span {
-  font:
-    14px/1.5 "DM Sans",
-    sans-serif;
-  color: #56694d;
+.advice-heading > p {
+  max-width: 480px;
+  margin-bottom: 0;
 }
-summary b {
-  font-size: 27px;
-  font-weight: 400;
-  margin-left: auto;
+.advice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
-details[open] summary b {
-  transform: rotate(45deg);
+.advice-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid #cbd5c2;
+  background: #fafbf6;
+  border-radius: 5px;
 }
-details > p {
+.advice-card h3 {
+  font-size: 23px;
+  margin: 8px 0 14px;
+  line-height: 1.4;
+}
+.advice-card > p:not(.advice-location) {
   font-size: 17px;
-  margin: 0 25px 28px 38px;
-  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.advice-location {
+  color: #4c6055;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.advice-card .text-link,
+.advice-card .button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+.advice-contact {
+  background: #dfe8d4;
+}
+@media (max-width: 1150px) {
+  .advice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .advice-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .advice-grid {
+    grid-template-columns: 1fr;
+  }
+  .advice-card {
+    padding: 23px;
+  }
 }
 
 /* Product browsing */
@@ -1333,9 +1339,6 @@ body.large-text {
   .location-profile {
     margin-top: 0;
   }
-  .services-layout {
-    gap: 55px;
-  }
   .shop-advice {
     flex-wrap: wrap;
   }
@@ -1546,28 +1549,6 @@ body.large-text {
   }
   .profile-source {
     font-size: 15px;
-  }
-  .services-layout {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .services-layout .text-link {
-    font-size: 17px;
-  }
-  .service-photo {
-    display: none;
-  }
-  summary {
-    font-size: 20px;
-    padding-block: 24px;
-    gap: 14px;
-  }
-  summary > span {
-    font-size: 13px;
-  }
-  details > p {
-    margin-left: 28px;
-    margin-right: 4px;
   }
   .shop-heading {
     flex-direction: column;

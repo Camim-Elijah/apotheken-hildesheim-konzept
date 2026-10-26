@@ -3,28 +3,6 @@
   "notice": "Product imagery belongs to the respective rights holders; demo prices are illustrative.",
   "products": [
     {
-      "id": "nomosan-b",
-      "brand": "NomoSan",
-      "name": "Vitamin B-Komplex",
-      "category": "Vitamine",
-      "pack": "30 Kapseln",
-      "price": 13.4,
-      "source": "https://nomosan-ug.com/products/vitamin-b-komplex-nomosan%C2%AE",
-      "image": "assets/products/nomosan-b.webp",
-      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/products/PZN_13820549-Fotostudio-Scheiwe.png?v=1693428491"
-    },
-    {
-      "id": "nomosan-immun",
-      "brand": "NomoSan",
-      "name": "Nomoimmun",
-      "category": "Vitamine",
-      "pack": "60 Kapseln",
-      "price": 59.9,
-      "source": "https://nomosan-ug.com/products/nomoimmun",
-      "image": "assets/products/nomosan-immun.webp",
-      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/NomoImmun.jpg?v=1709401447"
-    },
-    {
       "id": "nomosan-amd",
       "brand": "NomoSan",
       "name": "Nomoadult AMD",
@@ -34,17 +12,6 @@
       "source": "https://nomosan-ug.com/products/nomoadult%C2%AEamd",
       "image": "assets/products/nomosan-amd.webp",
       "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_01087173-Fotostudio-Scheiwe-Neu.png?v=1709930962"
-    },
-    {
-      "id": "nomosan-vital",
-      "brand": "NomoSan",
-      "name": "Nomoadult Vital",
-      "category": "Spezial",
-      "pack": "90 Kapseln",
-      "price": 67.9,
-      "source": "https://nomosan-ug.com/products/nomoadult%C2%AE-vital",
-      "image": "assets/products/nomosan-vital.webp",
-      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_01878561-Fotostudio-Scheiwe.png?v=1757785593"
     },
     {
       "id": "orthomol",
@@ -69,28 +36,6 @@
       "originalImage": "https://pim.doppelherz.de/de/product/473/45570/image-thumb__45570__406x406_noalpha/4009932004731_473_Magnesium_400_30_fr@1.5x.8ad1786c.webp"
     },
     {
-      "id": "nomosan-q10",
-      "brand": "NomoSan",
-      "name": "Nomoadult Q10",
-      "category": "Spezial",
-      "pack": "Produktbeispiel",
-      "price": 49.9,
-      "source": "https://nomosan-ug.com/products/nomoadult%C2%AE-q10",
-      "image": "assets/products/nomosan-q10.webp",
-      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_11874877-Fotostudio-Scheiwe.png?v=1757785617"
-    },
-    {
-      "id": "nomosan-anthocyan",
-      "brand": "NomoSan",
-      "name": "Anthocyan",
-      "category": "Spezial",
-      "pack": "30 Kapseln",
-      "price": 27.9,
-      "source": "https://nomosan-ug.com/products/anthocyan-nomosan-kapseln",
-      "image": "assets/products/nomosan-anthocyan.webp",
-      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_17975237-Fotostudio-Scheiwe-2.jpg?v=1709930534"
-    },
-    {
       "id": "ratiopharm",
       "brand": "ratiopharm",
       "name": "Vitamin B-Komplex",
@@ -100,6 +45,94 @@
       "source": "https://www.ratiopharm.de/produkte/details/vitamin-b-komplex-ratiopharm-hartkapseln-pzn-4132750/",
       "image": "assets/products/ratiopharm.webp",
       "originalImage": "https://www.ratiopharm.de/assets/products/de/packpic/Vitamin_B_Komplex_rtp_HKA_OP120_3D_Web_new_quer_links_clean_13352373.png"
+    },
+    {
+      "id": "nomosan-glaukom",
+      "brand": "NomoSan",
+      "name": "Nomoadult Glaukom plus",
+      "category": "Spezial",
+      "pack": "60 Kapseln",
+      "price": 59.0,
+      "source": "https://nomosan-ug.com/products/nomoadult-glaukom-plus",
+      "image": "assets/products/nomosan-glaukom.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_17453378-Fotostudio-Scheiwe.png?v=1757785745"
+    },
+    {
+      "id": "orthomol-icare",
+      "brand": "Orthomol",
+      "name": "i-CAre",
+      "category": "Spezial",
+      "pack": "30 Tagesportionen",
+      "price": 59.95,
+      "source": "https://www.orthomol.com/de-de/produkte/immunsystem/orthomol-i-care",
+      "image": "assets/products/orthomol-icare.webp",
+      "originalImage": "https://www.orthomol.com/cdn/produkte/immunsystem/orthomol-i-care/orthomol-i-care-granulat-kapseln-30er.png?q=100&w=2765&h=2301&cb=1783072077&x=png&m=.png"
+    },
+    {
+      "id": "orthomol-immun-pro",
+      "brand": "Orthomol",
+      "name": "Immun pro",
+      "category": "Vitamine",
+      "pack": "30 Tagesportionen",
+      "price": 64.95,
+      "source": "https://www.orthomol.com/de-de/produkte/immunsystem/orthomol-immun-pro",
+      "image": "assets/products/orthomol-immun-pro.webp",
+      "originalImage": "https://www.orthomol.com/cdn/produkte/immunsystem/orthomol-immun-pro/orthomol-immun-pro-granulat-kapsel-30er.png?q=100&w=3680&h=2366&cb=1783072580&x=png&m=.png"
+    },
+    {
+      "id": "orthomol-vitamin-c",
+      "brand": "Orthomol",
+      "name": "Vitamin C depo",
+      "category": "Vitamine",
+      "pack": "100 Tabletten",
+      "price": 18.95,
+      "source": "https://www.orthomol.com/de-de/produkte/immunsystem/orthomol-vitamin-c-depo",
+      "image": "assets/products/orthomol-vitamin-c.webp",
+      "originalImage": "https://www.orthomol.com/cdn/produkte/immunsystem/orthomol-vitamin-c-depo/orthomol-vitamin-c-depo-tabletten-100er.png?q=100&w=2675&h=2970&cb=1783072868&x=png&m=.png"
+    },
+    {
+      "id": "orthomol-d3-k2",
+      "brand": "Orthomol",
+      "name": "Vitamin D3 + K2 Spray",
+      "category": "Vitamine",
+      "pack": "130 Tagesportionen",
+      "price": 23.95,
+      "source": "https://www.orthomol.com/de-de/produkte/immunsystem/orthomol-vitamin-d3-k2-spray",
+      "image": "assets/products/orthomol-d3-k2.webp",
+      "originalImage": "https://www.orthomol.com/cdn/produkte/immunsystem/orthomol-vitamin-d3-k2-spray/orthomol-vitamin-d3-k2-spray-130er.png?q=100&w=1479&h=2072&cb=1783072932&x=png&m=.png"
+    },
+    {
+      "id": "ratiopharm-magnesium",
+      "brand": "ratiopharm",
+      "name": "Magnesium + Vitamin E",
+      "category": "Mineralstoffe",
+      "pack": "60 Weichkapseln",
+      "price": 16.95,
+      "source": "https://www.ratiopharm.de/produkte/details/magnesium-und-vitamin-e-ratiopharm-pzn-3935530/",
+      "image": "assets/products/ratiopharm-magnesium.webp",
+      "originalImage": "https://www.ratiopharm.de/assets/products/de/packpic/Magnesium_und_VitaminE_rtp_OP60_new_3D_Web_quer_links_clean_03935530.png"
+    },
+    {
+      "id": "doppelherz-d3",
+      "brand": "Doppelherz",
+      "name": "Vitamin D3 2000 I.E.",
+      "category": "Vitamine",
+      "pack": "60 Mini-Tabletten",
+      "price": 4.95,
+      "source": "https://www.doppelherz.de/produkte/doppelherz-aktiv-vitamin-d3-2000-ie",
+      "image": "assets/products/doppelherz-d3.webp",
+      "originalImage": "https://pim.doppelherz.de/de/product/40013/51134/image-thumb__51134__406x406_noalpha/4009932134001_40013_Vitamin_D3_2000_I_E__60_fr_6ab3cb9693424@1.5x.a548feae.webp"
+    },
+    {
+      "id": "doppelherz-omega",
+      "brand": "Doppelherz",
+      "name": "Omega-3 Seefischöl 1000",
+      "category": "Omega",
+      "pack": "80 Kapseln",
+      "price": 8.95,
+      "source": "https://www.doppelherz.de/immunsystem-special/produkte/doppelherz-aktiv-omega-3-seefischoel-1000",
+      "image": "assets/products/doppelherz-omega.webp",
+      "originalImage": "https://pim.doppelherz.de/de/product/32100/47381/image-thumb__47381__406x406_noalpha/4009932003215_32100_Omega_3_Seefischoel_1000_80_fr@1.5x.795c20b9.webp"
     }
   ]
 }
