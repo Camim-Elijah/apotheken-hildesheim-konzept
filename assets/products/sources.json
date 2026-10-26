@@ -1,0 +1,105 @@
+{
+  "researched": "2026-10-26",
+  "notice": "Product imagery belongs to the respective rights holders; demo prices are illustrative.",
+  "products": [
+    {
+      "id": "nomosan-b",
+      "brand": "NomoSan",
+      "name": "Vitamin B-Komplex",
+      "category": "Vitamine",
+      "pack": "30 Kapseln",
+      "price": 13.4,
+      "source": "https://nomosan-ug.com/products/vitamin-b-komplex-nomosan%C2%AE",
+      "image": "assets/products/nomosan-b.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/products/PZN_13820549-Fotostudio-Scheiwe.png?v=1693428491"
+    },
+    {
+      "id": "nomosan-immun",
+      "brand": "NomoSan",
+      "name": "Nomoimmun",
+      "category": "Vitamine",
+      "pack": "60 Kapseln",
+      "price": 59.9,
+      "source": "https://nomosan-ug.com/products/nomoimmun",
+      "image": "assets/products/nomosan-immun.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/NomoImmun.jpg?v=1709401447"
+    },
+    {
+      "id": "nomosan-amd",
+      "brand": "NomoSan",
+      "name": "Nomoadult AMD",
+      "category": "Spezial",
+      "pack": "60 Kapseln",
+      "price": 46.8,
+      "source": "https://nomosan-ug.com/products/nomoadult%C2%AEamd",
+      "image": "assets/products/nomosan-amd.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_01087173-Fotostudio-Scheiwe-Neu.png?v=1709930962"
+    },
+    {
+      "id": "nomosan-vital",
+      "brand": "NomoSan",
+      "name": "Nomoadult Vital",
+      "category": "Spezial",
+      "pack": "90 Kapseln",
+      "price": 67.9,
+      "source": "https://nomosan-ug.com/products/nomoadult%C2%AE-vital",
+      "image": "assets/products/nomosan-vital.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_01878561-Fotostudio-Scheiwe.png?v=1757785593"
+    },
+    {
+      "id": "orthomol",
+      "brand": "Orthomol",
+      "name": "Immun",
+      "category": "Vitamine",
+      "pack": "30 Tagesportionen",
+      "price": 49.95,
+      "source": "https://www.orthomol.com/de-de/produkte/immunsystem/orthomol-immun",
+      "image": "assets/products/orthomol.webp",
+      "originalImage": "https://www.orthomol.com/cdn/produkte/immunsystem/orthomol-immun/orthomol-immun-trinkflaeschchen-tabletten-30er.png?q=100&w=600&h=457&cb=1783072408&x=png&m=.png"
+    },
+    {
+      "id": "doppelherz",
+      "brand": "Doppelherz",
+      "name": "Magnesium 400",
+      "category": "Mineralstoffe",
+      "pack": "30 Tabletten",
+      "price": 6.95,
+      "source": "https://www.doppelherz.de/magnesium-special/produkte/doppelherz-aktiv-magnesium-400",
+      "image": "assets/products/doppelherz.webp",
+      "originalImage": "https://pim.doppelherz.de/de/product/473/45570/image-thumb__45570__406x406_noalpha/4009932004731_473_Magnesium_400_30_fr@1.5x.8ad1786c.webp"
+    },
+    {
+      "id": "nomosan-q10",
+      "brand": "NomoSan",
+      "name": "Nomoadult Q10",
+      "category": "Spezial",
+      "pack": "Produktbeispiel",
+      "price": 49.9,
+      "source": "https://nomosan-ug.com/products/nomoadult%C2%AE-q10",
+      "image": "assets/products/nomosan-q10.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_11874877-Fotostudio-Scheiwe.png?v=1757785617"
+    },
+    {
+      "id": "nomosan-anthocyan",
+      "brand": "NomoSan",
+      "name": "Anthocyan",
+      "category": "Spezial",
+      "pack": "30 Kapseln",
+      "price": 27.9,
+      "source": "https://nomosan-ug.com/products/anthocyan-nomosan-kapseln",
+      "image": "assets/products/nomosan-anthocyan.webp",
+      "originalImage": "https://cdn.shopify.com/s/files/1/0727/9542/3057/files/PZN_17975237-Fotostudio-Scheiwe-2.jpg?v=1709930534"
+    },
+    {
+      "id": "ratiopharm",
+      "brand": "ratiopharm",
+      "name": "Vitamin B-Komplex",
+      "category": "Vitamine",
+      "pack": "120 Hartkapseln",
+      "price": 24.9,
+      "source": "https://www.ratiopharm.de/produkte/details/vitamin-b-komplex-ratiopharm-hartkapseln-pzn-4132750/",
+      "image": "assets/products/ratiopharm.webp",
+      "originalImage": "https://www.ratiopharm.de/assets/products/de/packpic/Vitamin_B_Komplex_rtp_HKA_OP120_3D_Web_new_quer_links_clean_13352373.png"
+    }
+  ]
+}

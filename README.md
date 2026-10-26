@@ -1,42 +1,64 @@
-# Apothekenfamilie Hildesheim · Designkonzept
+# Apothekenfamilie Hildesheim
 
-Responsive, statische Website für Einhorn-Apotheke, Apotheke am Theater und Steinberg-Apotheke. Unabhängiger Entwurf, keine offizielle Apotheken-Website.
+Unabhängiges Website-Konzept für Einhorn-Apotheke, Apotheke am Theater und Steinberg-Apotheke. Mit lokalem Demoshop für Nahrungsergänzungsmittel. Keine offizielle Apotheken-Website.
 
-## Start
+## Lokal starten
 
-`python3 -m http.server 4173`
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
 
-Danach http://localhost:4173 öffnen. Kein Build und keine Installation erforderlich. Relative Asset-Pfade funktionieren auf GitHub Pages in Unterverzeichnissen.
+Anschließend http://127.0.0.1:4173 öffnen. Das Projekt benötigt zur Laufzeit weder einen Build noch externe JavaScript-Bibliotheken. Auch Schriften und Bilder werden lokal ausgeliefert. Relative Pfade unterstützen die Veröffentlichung in einem GitHub-Pages-Unterverzeichnis.
+
+## Struktur
+
+- `index.html`: semantische Seitenstruktur und recherchierte Standortprofile
+- `style.css`: Layout, Komponenten, responsive Ansichten und Lesemodus
+- `scripts/app.js`: Initialisierung, Navigation und Schriftgrößen-Einstellung
+- `scripts/data/products.js`: Produktkatalog, Bildpfade und Originalquellen
+- `scripts/data/locations.js`: Kontaktdaten, Öffnungszeiten und Standortleistungen
+- `scripts/cart.js`: Warenkorbmodell mit validierten Mengen und Berechnung in Cent
+- `scripts/cart-view.js`: Warenkorbansicht und simulierter Bestellabschluss
+- `scripts/shop.js`: Produktsuche, Kategorien, Markenfilter und Übersicht
+- `scripts/locations.js`: Standortauswahl und Tastaturbedienung der Tabs
+- `scripts/dialogs.js`: Produktinformationen und Projekthinweise
+- `scripts/utils.js`: Text-Escaping, Preisformatierung und lokale Einstellungen
+- `tests/cart.test.js`: Prüfungen der Warenkorblogik und Kataloganforderungen
+- `assets/products/sources.json`: Herkunftsnachweise für Produktbilder
 
 ## Funktionen
 
-- Drei Original-Logos und echte Apothekenfotos
-- Standortwechsel, recherchierte Öffnungszeiten, Telefon, E-Mail und Routenlinks
-- Beratungsakkordeon und redaktionelle Artikeldialoge
-- Acht illustrative NEM-Produkte, Kategorien, Suche, Produktdetails
-- Persistenter lokaler Demo-Warenkorb mit Mengenänderung und Entfernen
-- Simulierter Abholabschluss ohne Backend, Zahlung oder Übermittlung
-- Tastaturbedienbare Dialoge und Standort-Tabs; reduzierte Bewegung
+Der Katalog zeigt neun Produkte aus vier Marken. NomoSan steht an erster Stelle und ist mit sechs Produkten vertreten. Die vier Demo-Marken sind NomoSan, ratiopharm, Orthomol und Doppelherz. Die Produkte können nach Kategorie und Marke gefiltert werden.
+
+Der Bestellabschluss ist vollständig simuliert. Es gibt keinen Bestellserver, keine Zahlungsabwicklung, keine Reservierung und keine Benachrichtigung der Apotheken. Preise sind ausdrücklich frei gewählte Demonstrationspreise.
+
+Das Foto der Inhaberin erscheint auf kleinen Bildschirmen unmittelbar unter der Navigation. Gut lesbare Grundschrift, ausreichend große Bedienelemente, sichtbare Tastaturfokusse und ein zusätzlicher Lesemodus unterstützen die Bedienung. Eine Zertifizierung der Barrierefreiheit wird nicht behauptet.
+
+## Prüfen und formatieren
+
+```sh
+npm install
+npm test
+npm run format
+```
+
+Prettier ist ausschließlich ein Entwicklungswerkzeug. Die Website hat keine Paketabhängigkeiten zur Laufzeit.
 
 ## Veröffentlichung
 
-Die GitHub-Actions-Datei `.github/workflows/pages.yml` veröffentlicht den Stand von `main` über GitHub Pages. Im Repository muss Pages auf GitHub Actions eingestellt sein.
+Der Workflow `.github/workflows/pages.yml` veröffentlicht `main` über GitHub Pages. Pages muss im Repository auf GitHub Actions eingestellt sein.
 
-## Fakten und Quellen
+## Quellen und Rechte
 
-Recherche: 26.10.2026. Logos und Fotos wurden direkt von den Original-Websites übernommen, nicht verändert und nicht als eigene Werke ausgegeben.
+Recherche vom 26.10.2026:
 
 - https://www.apotheke-am-theater-hildesheim.de/
 - https://www.apotheke-am-theater-hildesheim.de/einhorn-apotheke
-- https://www.apotheke-am-theater-hildesheim.de/aktuelles
 - https://www.steinberg-apotheke.de/
-- https://www.hildesheim-tourismus.de/marktplatz
-- https://www.hildesheim-tourismus.de/sehen-und-erleben/sehenswuerdigkeiten
+- https://nomosan-ug.com/
 
-Instagram ist verlinkt; der Abruf war nicht zuverlässig möglich. Keine Instagram-Posts übernommen.
+Weitere Original-Produktseiten sind im Produktkatalog und bei jedem Produktdetail verlinkt. Logos, Apothekenfotos und Produktbilder gehören ihren jeweiligen Rechteinhabern. Die Darstellung behauptet keine Markenpartnerschaft und keine tatsächliche Produktverfügbarkeit der Apotheken. Schriftlizenzen liegen im Verzeichnis `assets`.
 
-Produktdarstellungen, Preise und Packungsgrößen sind ausdrücklich fiktive Beispiele, keine echten Angebote und keine Markenpartnerschaften. Produktpackungen bestehen aus eigenem HTML/CSS. Keine therapeutischen Produktversprechen. Die Logos und Apothekenfotos verbleiben bei den jeweiligen Rechteinhabern.
+## Lokale Daten
 
-## Daten
-
-Nur Artikel-IDs und Mengen werden im lokalen Browser gespeichert. Keine Kunden-, Gesundheits- oder Zahlungsdaten werden versendet. Der eingegebene Testname bleibt im Arbeitsspeicher der Seite. Bilder und Schriften werden lokal bereitgestellt. Die Schriftlizenzen liegen im assets-Verzeichnis. Eine spätere offizielle Version benötigt die eigenen rechtlichen Angaben des Betreibers.
+Ausschließlich Artikelkennungen, Mengen und Schriftgrößen-Einstellung werden im Browser gespeichert. Der frei gewählte Testname wird nur vorübergehend für die simulierte Bestellbestätigung verwendet. Es werden keine Kunden-, Gesundheits- oder Zahlungsdaten versendet. Analyse- und Marketingdienste sind nicht eingebunden.

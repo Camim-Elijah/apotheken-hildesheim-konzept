@@ -1,0 +1,15 @@
+{
+  "name": "apotheken-hildesheim-konzept",
+  "private": true,
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Statisches Website-Konzept für die Apothekenfamilie Hildesheim mit simuliertem NEM-Shop",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "format": "prettier --write index.html style.css scripts tests README.md package.json"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
