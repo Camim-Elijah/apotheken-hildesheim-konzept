@@ -18,7 +18,7 @@ const PROJECT_INFORMATION = `
 const PRIVACY_INFORMATION = `
   <p class="eyebrow">Zu diesem Prototyp</p>
   <h2>Ihre Daten im Demoshop.</h2>
-  <p>Artikelkennungen, Mengen und die gewählte Schriftgröße werden ausschließlich lokal in Ihrem Browser gespeichert. Der Testname für die simulierte Bestellung bleibt vorübergehend im Arbeitsspeicher der Seite. Es werden keine Bestell-, Gesundheits- oder Zahlungsdaten versendet.</p>
+  <p>Artikelkennungen und Mengen werden ausschließlich lokal in Ihrem Browser gespeichert. Der Testname für die simulierte Bestellung bleibt vorübergehend im Arbeitsspeicher der Seite. Es werden keine Bestell-, Gesundheits- oder Zahlungsdaten versendet.</p>
   <p>Bilder und Schriften werden lokal bereitgestellt. Es sind keine Analyse- oder Marketingdienste eingebunden. GitHub Pages verarbeitet technische Zugriffsdaten für die Bereitstellung gemäß seinen eigenen Datenschutzbestimmungen. Bei externen Links gelten die Bestimmungen des jeweiligen Anbieters.</p>
   <button id="clear-storage" class="button">Demo-Warenkorb löschen</button>`;
 

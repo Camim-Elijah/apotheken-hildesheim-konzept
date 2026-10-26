@@ -1,7 +1,7 @@
 import { PRODUCTS } from "./data/products.js";
 import { escapeHtml, formatCurrency, productImage } from "./utils.js";
 
-const INITIAL_PRODUCT_COUNT = 8;
+const INITIAL_PRODUCT_COUNT = 4;
 
 export function initializeShop({ onAdd, onDetails }) {
   const container = document.querySelector("#shop");
@@ -41,7 +41,7 @@ export function initializeShop({ onAdd, onDetails }) {
         <span class="price-label">Beispielpreis · Demo</span>
         <button class="add-button" data-add="${product.id}"
           aria-label="${escapeHtml(product.brand)} ${escapeHtml(product.name)} zum Demo-Warenkorb hinzufügen">
-          In den Warenkorb
+          Hinzufügen
         </button>
       </div>
     </article>`;

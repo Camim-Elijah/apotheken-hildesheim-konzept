@@ -2,147 +2,121 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#173f35" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#183e35" />
     <meta
       name="description"
-      content="Designkonzept für die Einhorn-Apotheke und die Apothekenfamilie Langer in Hildesheim. Persönliche Beratung, drei Standorte und ein NEM-Demoshop."
+      content="Drei Apotheken von Birte-Maria Langer in Hildesheim: Einhorn-Apotheke, Apotheke am Theater und Steinberg-Apotheke. Persönliche Beratung, Kontakt und Öffnungszeiten. Unabhängiges Designkonzept mit Demoshop."
     />
-    <title>Einhorn-Apotheke · Ihre Gesundheit. Unser Hildesheim.</title>
+    <title>Drei Apotheken. Eine Familie. | Hildesheim</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="scripts/app.js"></script>
   </head>
   <body>
     <a class="skip" href="#main">Zum Inhalt springen</a>
-    <div class="utility">
-      <span>Hildesheim. Hier sind wir zu Hause.</span
-      ><span
-        ><a
-          href="https://www.aponet.de/apotheke/notdienstsuche"
-          target="_blank"
-          rel="noopener"
-          >Apotheken-Notdienst </a
-        ><span class="utility-line">·</span
-        ><a href="tel:+49512132653">05121 32653</a></span
-      >
-    </div>
-    <header>
-      <a class="brand" href="#" aria-label="Einhorn-Apotheke Startseite"
-        ><img
-          src="assets/logo-einhorn.png"
-          alt="Original-Logo Einhorn-Apotheke"
-          width="966"
-          height="266"
-      /></a>
-      <nav id="navigation" aria-label="Hauptnavigation">
-        <a href="#familie">Unsere Apotheken</a><a href="#beratung">Beratung</a
-        ><a href="#shop">NEM-Shop</a>
-      </nav>
-      <div class="header-actions">
-        <button
-          id="reading-toggle"
-          aria-label="Größere Schrift einschalten"
-          aria-pressed="false"
+    <header class="site-header">
+      <div class="header-inner">
+        <a
+          class="brand"
+          href="#start"
+          aria-label="Einhorn-Apotheke und Apothekenfamilie Langer – Startseite"
         >
-          A<span>+</span></button
-        ><button class="cart-trigger" aria-label="Warenkorb öffnen">
+          <img
+            class="pharmacy-symbol"
+            src="assets/apotheken-a.webp"
+            alt="Rotes Apotheken-A"
+            width="80"
+            height="80"
+          />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img
+            class="brand-logo"
+            src="assets/logo-einhorn.png"
+            alt="Original-Logo Einhorn-Apotheke"
+            width="966"
+            height="266"
+          />
+        </a>
+        <nav id="navigation" aria-label="Hauptnavigation">
+          <a href="#familie">Apotheken</a>
+          <a href="#beratung">Beratung</a>
+          <a href="#shop">Shop</a>
+          <a href="#standorte">Kontakt</a>
+        </nav>
+        <button class="cart-trigger" aria-label="Demo-Warenkorb öffnen">
           <svg
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="1.5"
+            aria-hidden="true"
           >
             <path d="M5 7h14l1 14H4L5 7Z" />
-            <path d="M8 8V6a4 4 0 0 1 8 0v2" /></svg
-          ><span id="cart-count">0</span></button
-        ><a class="button small" href="#standorte">Kontakt </a
-        ><button
-          class="menu-toggle"
-          aria-label="Menü öffnen"
-          aria-expanded="false"
-          aria-controls="navigation"
-        >
-          Menü
+            <path d="M8 8V6a4 4 0 0 1 8 0v2" />
+          </svg>
+          <span id="cart-count">0</span>
         </button>
       </div>
     </header>
     <main id="main">
       <noscript
-        ><p style="padding: 20px 6%; background: #e9ede3">
-          Für Warenkorb und Standortwechsel aktivieren Sie bitte JavaScript. Die
-          Einhorn-Apotheke erreichen Sie unter
+        ><p class="wrap">
+          Für den Demoshop und die Standortauswahl aktivieren Sie bitte
+          JavaScript. Sie erreichen die Einhorn-Apotheke unter
           <a href="tel:+49512132653">05121 32653</a>.
         </p></noscript
       >
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="dot"></span> Ihre Apothekenfamilie in Hildesheim
-          </p>
-          <h1>Für Ihre Gesundheit.<br /><em>Mit einem Lächeln.</em></h1>
-          <p class="hero-text">
-            Willkommen in Ihrer Einhorn-Apotheke. Wir hören zu, erklären
-            verständlich und nehmen uns Zeit für Ihre Fragen.
-          </p>
-          <div class="hero-buttons">
-            <a class="button" href="#familie">Unsere Apotheken kennenlernen </a
-            ><a class="text-link" href="#standorte"
-              >Öffnungszeiten & Kontakt
-            </a>
-          </div>
-        </div>
+      <section id="start" class="hero">
         <div class="hero-image">
           <img
             src="assets/team.jpg"
-            alt="Apothekerin Birte-Maria Langer im persönlichen Beratungsgespräch"
-            fetchpriority="high"
+            alt="Apothekerin Birte-Maria Langer lächelt im persönlichen Beratungsgespräch"
             width="2000"
             height="1334"
+            fetchpriority="high"
           />
-          <div class="image-label">
-            <span class="dot"></span> Birte-Maria Langer · Apothekerin &
-            Inhaberin
-          </div>
+          <span class="image-label"
+            >Birte-Maria Langer · Apothekerin & Inhaberin</span
+          >
         </div>
-        <div class="hero-bottom">
-          <span>Vertraut im Zingel. Verbunden in Hildesheim.</span
-          ><a href="#familie">Entdecken Sie unsere Familie </a>
-        </div>
-      </section>
-      <section class="quick-links wrap" aria-label="Schnellzugriff">
-        <a
-          href="https://www.apotheke-am-theater-hildesheim.de/arzneimittelreservierung"
-          target="_blank"
-          rel="noopener"
-          ><div>
-            <strong>Rezept & Medikamente</strong
-            ><span>Zur bestehenden Reservierung</span>
-          </div></a
-        ><a href="#beratung"
-          ><div>
-            <strong>Zeit für Ihre Fragen</strong
-            ><span>Unsere Beratung kennenlernen</span>
-          </div></a
-        ><a href="#standorte"
-          ><div>
-            <strong>Ganz in Ihrer Nähe</strong
-            ><span>Drei Apotheken. Ein gutes Gefühl.</span>
-          </div></a
-        >
-      </section>
-      <section id="familie" class="family wrap section">
-        <div class="section-top">
-          <p class="eyebrow">Drei Adressen. Eine Haltung.</p>
-          <span class="index">01 / Unsere Familie</span>
-        </div>
-        <div class="family-heading">
-          <h2>Welche Apotheke<br /><em>passt zu Ihrem Anliegen?</em></h2>
-          <p>
-            Drei Standorte, ein gemeinsamer Anspruch: gut für Sie da sein.
-            Entdecken Sie die Leistungen unserer Apothekenfamilie unter der
-            Leitung von Birte-Maria Langer.
+        <div class="hero-copy">
+          <p class="eyebrow">Ihre Apothekenfamilie in Hildesheim</p>
+          <h1>Persönlich da.<br />Für Ihre Gesundheit.</h1>
+          <p class="hero-text">
+            Drei Apotheken von Birte-Maria Langer. Ein gemeinsamer Anspruch:
+            zuhören, verständlich beraten und Sie im Alltag begleiten.
           </p>
+          <a class="button" href="#standorte">Öffnungszeiten & Kontakt</a>
+          <a class="hero-secondary" href="#familie"
+            >Unsere drei Apotheken kennenlernen</a
+          >
+        </div>
+      </section>
+      <section id="familie" class="section wrap family">
+        <div class="family-intro">
+          <div>
+            <p class="eyebrow">Einhorn · Theater · Steinberg</p>
+            <h2>Drei Apotheken.<br />Eine Inhaberin.</h2>
+            <p>
+              Die Einhorn-Apotheke, die Apotheke am Theater und die
+              Steinberg-Apotheke gehören zu Birte-Maria Langer. Gemeinsam mit
+              den Teams vor Ort ist sie für Sie da – in der Innenstadt und in
+              Ochtersum.
+            </p>
+          </div>
+          <figure class="owners-photo">
+            <img
+              src="assets/theater.jpg"
+              alt="Birte-Maria und Tobias Langer vor der Apotheke am Theater"
+              width="2000"
+              height="1102"
+              loading="lazy"
+            />
+            <figcaption>
+              Birte-Maria und Tobias Langer vor der Apotheke am Theater.
+            </figcaption>
+          </figure>
         </div>
         <div class="family-grid">
           <article class="family-card" id="profil-einhorn">
@@ -156,27 +130,14 @@
             <div class="family-card-content">
               <p class="place">Innenstadt · Zingel 17</p>
               <h3>Einhorn-Apotheke</h3>
-              <p class="profile-title">
-                Vertraut am Zingel. Zeit für Ihre Fragen.
-              </p>
-              <p>
-                Das eingespielte Team begleitet Sie bei Ihren alltäglichen
-                Fragen rund um Arzneimittel.
-              </p>
               <ul class="strengths">
-                <li>Anwendung und Einnahme verständlich erklärt</li>
-                <li>Beratung zu möglichen Wechselwirkungen</li>
-                <li>Auch samstags von 9 bis 13 Uhr geöffnet</li>
+                <li>Persönliche Arzneimittelberatung</li>
+                <li>Fragen zu Einnahme und Wechselwirkungen</li>
+                <li>Samstags von 9 bis 13 Uhr geöffnet</li>
               </ul>
-              <a class="button outline" href="#standorte" data-visit="einhorn"
-                >Kontakt & Öffnungszeiten </a
-              ><a
-                class="profile-source"
-                href="https://www.apotheke-am-theater-hildesheim.de/einhorn-apotheke"
-                target="_blank"
-                rel="noopener"
-                >Zur bisherigen Website
-              </a>
+              <a class="text-link" href="#standorte" data-visit="einhorn"
+                >Standort ansehen</a
+              >
             </div>
           </article>
           <article class="family-card" id="profil-theater">
@@ -190,25 +151,14 @@
             <div class="family-card-content">
               <p class="place">Innenstadt · Zingel 29</p>
               <h3>Apotheke am Theater</h3>
-              <p class="profile-title">Die Adresse für vertiefende Beratung.</p>
-              <p>
-                Hier finden Sie spezialisierte Beratung, die über die tägliche
-                Arzneimittelversorgung hinausgeht.
-              </p>
               <ul class="strengths">
                 <li>Medikationsanalyse und Darmfachberatung</li>
-                <li>Kinderwunsch- und Transgender-Beratung</li>
-                <li>Montags und freitags bereits ab 7:15 Uhr</li>
+                <li>Beratung zu Kinderwunsch und Reproduktionsmedizin</li>
+                <li>Vertrauliche Transgender-Beratung</li>
               </ul>
-              <a class="button outline" href="#standorte" data-visit="theater"
-                >Kontakt & Öffnungszeiten </a
-              ><a
-                class="profile-source"
-                href="https://www.apotheke-am-theater-hildesheim.de/"
-                target="_blank"
-                rel="noopener"
-                >Zur bisherigen Website
-              </a>
+              <a class="text-link" href="#standorte" data-visit="theater"
+                >Standort ansehen</a
+              >
             </div>
           </article>
           <article class="family-card" id="profil-steinberg">
@@ -222,192 +172,107 @@
             <div class="family-card-content">
               <p class="place">Ochtersum · Theodor-Storm-Str. 20</p>
               <h3>Steinberg-Apotheke</h3>
-              <p class="profile-title">Praktische Hilfe für Ihren Alltag.</p>
-              <p>
-                Das Team in Ochtersum unterstützt Sie mit persönlicher Beratung
-                und praktischen Versorgungsangeboten.
-              </p>
               <ul class="strengths">
                 <li>Milchpumpenverleih auf Anfrage</li>
                 <li>Versorgung mit Kompressionsstrümpfen</li>
                 <li>Kosmetik, Hilfsmittel und Nahrungsergänzung</li>
               </ul>
-              <a class="button outline" href="#standorte" data-visit="steinberg"
-                >Kontakt & Öffnungszeiten </a
-              ><a
-                class="profile-source"
-                href="https://www.steinberg-apotheke.de/"
-                target="_blank"
-                rel="noopener"
-                >Zur bisherigen Website
-              </a>
+              <a class="text-link" href="#standorte" data-visit="steinberg"
+                >Standort ansehen</a
+              >
             </div>
           </article>
         </div>
       </section>
-      <section id="beratung" class="services section">
+      <section id="beratung" class="section services">
         <div class="wrap">
-          <div class="section-top">
-            <p class="eyebrow">Gut beraten fühlt sich besser an.</p>
-            <span class="index">02 / Beratung & Service</span>
-          </div>
-          <div class="advice-heading">
-            <h2>Gute Beratung.<br /><em>Ganz persönlich.</em></h2>
+          <div class="section-heading">
+            <p class="eyebrow">Verständlich. In Ruhe. Persönlich.</p>
+            <h2>Was beschäftigt Sie?</h2>
             <p>
-              Finden Sie Ihr Thema und die passende Anlaufstelle. Wir hören zu
-              und erklären verständlich.
+              Für allgemeine Fragen sind alle drei Teams ansprechbar.
+              Spezialisierte Beratung finden Sie in der Apotheke am Theater.
             </p>
           </div>
           <div class="advice-grid">
             <article class="advice-card">
-              <p class="advice-location">Apotheke am Theater</p>
-              <h3>Medikamente verstehen</h3>
+              <h3>Ihre Medikamente</h3>
               <p>
-                Fragen zur Einnahme oder zu Wechselwirkungen? Wir erklären Ihre
-                Medikamente und informieren Sie über eine Medikationsanalyse.
+                Wir erklären die Anwendung und besprechen Fragen zur Einnahme.
+                Die Apotheke am Theater informiert Sie auch über eine
+                Medikationsanalyse.
               </p>
-              <a href="tel:+495121133249" class="text-link"
-                >05121 133249 anrufen</a
-              >
             </article>
             <article class="advice-card">
-              <p class="advice-location">Apotheke am Theater</p>
-              <h3>Darm & Wohlbefinden</h3>
+              <h3>Darm & Nährstoffe</h3>
               <p>
-                Die Darmfachberatung nimmt sich Zeit für Ihre Fragen zu
-                Verdauung, Ernährung und Ihrem Alltag.
+                Fragen zu Ernährung, Verdauung oder Nahrungsergänzung? Wir
+                helfen bei der Orientierung; die Darmfachberatung bietet die
+                Apotheke am Theater.
               </p>
-              <a href="tel:+495121133249" class="text-link"
-                >05121 133249 anrufen</a
-              >
             </article>
             <article class="advice-card">
-              <p class="advice-location">Persönliche Beratung</p>
-              <h3>Nährstoffe sinnvoll ergänzen</h3>
+              <h3>Persönliche Fragen</h3>
               <p>
-                Wir besprechen Ihren Bedarf und mögliche Wechselwirkungen.
-                Nahrungsergänzung ersetzt keine ausgewogene Ernährung.
+                Kinderwunsch, Reproduktionsmedizin oder Transgender-Beratung: In
+                der Apotheke am Theater können Sie diese Themen vertraulich
+                ansprechen.
               </p>
-              <a href="tel:+49512132653" class="text-link"
-                >05121 32653 anrufen</a
-              >
-            </article>
-            <article class="advice-card">
-              <p class="advice-location">Theater und Steinberg</p>
-              <h3>Kinderwunsch & Familie</h3>
-              <p>
-                Kinderwunschberatung in der Apotheke am Theater. Den
-                Milchpumpenverleih können Sie in der Steinberg-Apotheke
-                anfragen.
-              </p>
-              <a href="tel:+495121262524" class="text-link"
-                >05121 262524 anrufen</a
-              >
-            </article>
-            <article class="advice-card">
-              <p class="advice-location">Apotheke am Theater</p>
-              <h3>Vertrauliche Beratung</h3>
-              <p>
-                Auch persönliche Fragen haben ihren Platz. Dazu gehört unsere
-                respektvolle Transgender-Beratung.
-              </p>
-              <a href="tel:+495121133249" class="text-link"
-                >05121 133249 anrufen</a
-              >
-            </article>
-            <article class="advice-card advice-contact">
-              <p class="advice-location">Noch eine Frage?</p>
-              <h3>Wir helfen Ihnen weiter.</h3>
-              <p>
-                Sie wissen noch nicht, welcher Standort der richtige ist? Die
-                Einhorn-Apotheke hilft Ihnen gern bei der Orientierung.
-              </p>
-              <a href="#standorte" class="button">Kontakt & Öffnungszeiten</a>
             </article>
           </div>
+          <a class="text-link advice-contact-link" href="tel:+495121133249"
+            >Beratung am Theater anfragen: 05121 133249</a
+          >
         </div>
       </section>
-
-      <section id="shop" class="shop section">
-        <div class="wrap">
-          <div class="section-top">
-            <p class="eyebrow">Bewusst ergänzen. Gut beraten.</p>
-            <span class="index">03 / Nahrungsergänzung</span>
+      <section id="shop" class="section shop wrap">
+        <div class="shop-heading">
+          <div class="section-heading">
+            <p class="eyebrow">Nahrungsergänzung</p>
+            <h2>In Ruhe entdecken.</h2>
+            <p>
+              Eine kleine Auswahl bekannter Marken. Welche Ergänzung für Sie
+              sinnvoll ist, besprechen wir gern persönlich.
+            </p>
           </div>
-          <div class="shop-heading">
-            <div>
-              <h2>Bekannte Marken.<br /><em>In Ruhe entdecken.</em></h2>
-              <p>
-                Von Orthomol bis Doppelherz: Entdecken Sie bekannte
-                Nahrungsergänzungsmittel. Welche Ergänzung zu Ihnen passt,
-                besprechen wir gern persönlich.
-              </p>
-            </div>
-            <span class="demo-badge">Demoshop · keine echten Bestellungen</span>
-          </div>
-          <div class="shop-controls">
-            <div class="filters" role="group" aria-label="Produkte filtern">
-              <button data-filter="Alle" aria-pressed="true" class="active">
-                Alle entdecken</button
-              ><button data-filter="Vitamine" aria-pressed="false">
-                Vitamine</button
-              ><button data-filter="Mineralstoffe" aria-pressed="false">
-                Mineralstoffe</button
-              ><button data-filter="Omega" aria-pressed="false">Omega-3</button
-              ><button data-filter="Spezial" aria-pressed="false">
-                Spezialprodukte
-              </button>
-            </div>
-          </div>
-          <div class="shop-search-row">
-            <label class="brand-select"
-              >Marke auswählen<select id="brand-filter">
-                <option value="Alle">Alle Marken</option>
-              </select></label
-            ><label class="search"
-              ><input
-                id="product-search"
-                type="search"
-                placeholder="Produkt oder Marke suchen"
-                aria-label="Produkt oder Marke suchen"
-            /></label>
-          </div>
-          <p id="product-count" class="product-count" role="status"></p>
-          <div id="products" class="products" aria-live="polite"></div>
-          <div class="show-more">
-            <button id="show-more-products" class="button outline">
-              Weitere Produkte anzeigen
-            </button>
-          </div>
-          <p class="shop-note">
-            Echte Marken und Produktabbildungen, frei gewählte Demo-Preise. Die
-            Auswahl zeigt ein mögliches Sortiment und ist keine
-            Verfügbarkeitszusage oder Markenpartnerschaft.
-            Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene,
-            abwechslungsreiche Ernährung und eine gesunde Lebensweise.
-          </p>
-          <div class="shop-advice">
-            <div>
-              <strong
-                >Das richtige Produkt beginnt mit der richtigen Frage.</strong
-              >
-              <p>
-                Sie sind unsicher, ob eine Ergänzung zu Ihnen passt? Lassen Sie
-                uns persönlich darüber sprechen.
-              </p>
-            </div>
-            <a class="text-link" href="tel:+49512132653">Beratung anrufen </a>
-          </div>
+          <span class="demo-badge">Demoshop · kein echter Kauf</span>
         </div>
+        <div class="shop-search-row">
+          <label class="brand-select"
+            >Marke<select id="brand-filter">
+              <option value="Alle">Alle Marken</option>
+            </select></label
+          >
+          <label class="search-label"
+            >Suche<input
+              id="product-search"
+              type="search"
+              placeholder="Produkt oder Marke"
+              aria-label="Produkt oder Marke suchen"
+          /></label>
+        </div>
+        <p id="product-count" class="product-count" role="status"></p>
+        <div id="products" class="products" aria-live="polite"></div>
+        <div class="show-more">
+          <button id="show-more-products" class="button outline">
+            Alle Produkte anzeigen
+          </button>
+        </div>
+        <p class="shop-note">
+          Alle Preise sind Demo-Beispiele. Es wird nichts tatsächlich bestellt
+          oder reserviert. Nahrungsergänzungsmittel ersetzen keine ausgewogene
+          Ernährung und gesunde Lebensweise.
+        </p>
       </section>
-
-      <section id="standorte" class="locations section">
+      <section id="standorte" class="section locations">
         <div class="wrap">
-          <div class="section-top">
-            <p class="eyebrow">Wir sind gleich um die Ecke.</p>
-            <span class="index">04 / Besuch & Kontakt</span>
+          <div class="section-heading">
+            <p class="eyebrow">Ihr Besuch bei uns</p>
+            <h2>So erreichen Sie uns.</h2>
+            <p>
+              Wählen Sie Ihre Apotheke für Öffnungszeiten, Kontakt und Anfahrt.
+            </p>
           </div>
-          <h2>Dreimal in Hildesheim.<br /><em>Immer persönlich.</em></h2>
           <div
             class="location-tabs"
             role="tablist"
@@ -420,8 +285,9 @@
               aria-controls="location-panel"
               data-location="einhorn"
             >
-              Einhorn-Apotheke</button
-            ><button
+              Einhorn-Apotheke
+            </button>
+            <button
               id="tab-theater"
               role="tab"
               aria-selected="false"
@@ -429,8 +295,9 @@
               tabindex="-1"
               data-location="theater"
             >
-              Apotheke am Theater</button
-            ><button
+              Apotheke am Theater
+            </button>
+            <button
               id="tab-steinberg"
               role="tab"
               aria-selected="false"
@@ -448,50 +315,37 @@
             aria-labelledby="tab-einhorn"
           ></div>
           <p class="location-note">
-            Öffnungszeiten laut den jeweiligen Apotheken-Websites, recherchiert
-            am 26.10.2026. Feiertage und Sonderzeiten können abweichen.
+            Öffnungszeiten laut den Apotheken-Websites, Stand 27.10.2026. An
+            Feiertagen können andere Zeiten gelten.
           </p>
+          <a
+            class="emergency-link"
+            href="https://www.aponet.de/apotheke/notdienstsuche"
+            target="_blank"
+            rel="noopener"
+            >Außerhalb der Öffnungszeiten: Apotheken-Notdienst finden</a
+          >
         </div>
-      </section>
-      <section class="closing wrap">
-        <h2>Schön, dass Sie da sind.</h2>
-        <p>Ihre Gesundheit verdient ein gutes Gespräch.</p>
-        <a class="button" href="tel:+49512132653">Einhorn-Apotheke anrufen </a>
       </section>
     </main>
     <footer>
       <div class="wrap footer-top">
         <div>
-          <img
-            src="assets/logo-einhorn.png"
-            alt="Einhorn-Apotheke"
-            loading="lazy"
-          />
-          <p>Eine Apothekenfamilie.<br />Mitten in Hildesheim.</p>
+          <strong>Die Apotheken von Birte-Maria Langer</strong>
+          <p>
+            Einhorn-Apotheke · Apotheke am Theater · Steinberg-Apotheke<br />Persönlich
+            für Sie da. In Hildesheim.
+          </p>
         </div>
-        <div>
-          <strong>Für Sie da</strong><a href="#beratung">Beratung & Service</a
-          ><a href="#shop">Nährstoffwelt · Demo</a
-          ><a href="#standorte">Standorte & Öffnungszeiten</a>
-        </div>
-        <div>
-          <strong>In Verbindung bleiben</strong
-          ><a href="tel:+49512132653">05121 32653</a
-          ><a href="mailto:info@einhorn-apotheke-hildesheim.de"
-            >E-Mail schreiben </a
-          ><a
-            href="https://www.instagram.com/apotheke_am_theater_hildesheim/"
-            target="_blank"
-            rel="noopener"
-            >Instagram
-          </a>
-        </div>
+        <a
+          href="https://www.instagram.com/apotheke_am_theater_hildesheim/"
+          target="_blank"
+          rel="noopener"
+          >Unser Alltag auf Instagram</a
+        >
       </div>
       <div class="wrap footer-bottom">
-        <span
-          >© 2026 · Unabhängiges Designkonzept, keine offizielle
-          Apotheken-Website.</span
-        >
+        <p>Unabhängiges Designkonzept · keine offizielle Apotheken-Website.</p>
         <div>
           <button data-legal="project">Über diesen Entwurf</button
           ><button data-legal="privacy">Datenschutz</button
@@ -499,19 +353,16 @@
             href="https://www.apotheke-am-theater-hildesheim.de/impressum"
             target="_blank"
             rel="noopener"
-            >Apotheken-Impressum
-          </a>
+            >Apotheken-Impressum</a
+          >
         </div>
       </div>
     </footer>
-    <div class="concept-label">
-      Designkonzept <span>·</span> Shop nur simuliert
-    </div>
     <dialog id="cart-dialog" class="drawer" aria-label="Demo-Warenkorb">
       <div class="dialog-top">
         <div>
-          <p class="eyebrow">Ihre Nährstoffwelt</p>
-          <h2>Ihr Warenkorb<span class="serif-italic">.</span></h2>
+          <p class="eyebrow">Demoshop</p>
+          <h2>Ihr Warenkorb</h2>
         </div>
         <button class="close-dialog" aria-label="Warenkorb schließen">
           Schließen

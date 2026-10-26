@@ -42,14 +42,6 @@ export function initializeLocations() {
       <span>${escapeHtml(location.hours[day]).replace(" / ", "<br>")}</span>
     </div>`,
     ).join("");
-    const image = location.image
-      ? `<img class="location-image" src="assets/${location.image}"
-          alt="${escapeHtml(location.name)} in Hildesheim" loading="lazy">`
-      : `<div class="steinberg-location">
-          <div class="logo-stage"><img src="assets/logo-steinberg.webp" alt="Original-Logo Steinberg-Apotheke"></div>
-          <p>Ihre Apotheke in Ochtersum.<br>Theodor-Storm-Straße 20</p>
-          <a class="text-link" href="${location.source}" target="_blank" rel="noopener">Zur bisherigen Website</a>
-        </div>`;
     const mapQuery = encodeURIComponent(
       `${location.name} ${location.street} ${location.city}`,
     );
@@ -67,11 +59,7 @@ export function initializeLocations() {
       </div>
       <div class="opening"><h4>Öffnungszeiten</h4>${hours}</div>
     </div>
-    ${image}
-    <div class="location-profile">
-      <div><h4>${escapeHtml(location.title)}</h4><p>${escapeHtml(location.intro)}</p></div>
-      <ul class="strengths">${location.strengths.map((strength) => `<li>${escapeHtml(strength)}</li>`).join("")}</ul>
-    </div>`;
+`;
   }
 
   tabList.addEventListener("click", (event) => {
