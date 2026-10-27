@@ -1,5 +1,7 @@
 # Apothekenfamilie Hildesheim
 
+**[🌐 Website direkt öffnen](https://camim-elijah.github.io/apotheken-hildesheim-konzept/)**
+
 Unabhängiges Website-Konzept für Einhorn-Apotheke, Apotheke am Theater und Steinberg-Apotheke. Mit lokalem Demoshop für Nahrungsergänzungsmittel. Keine offizielle Apotheken-Website.
 
 ## Lokal starten
